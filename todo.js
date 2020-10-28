@@ -13,7 +13,7 @@ function addTodo(event) {
   todoDiv.classList.add('todo');
   // create li
   const newTodo = document.createElement('li');
-  newTodo.innerText = 'hey';
+  newTodo.innerText = todoInput.value;
   newTodo.classList.add('todo-item');
   todoDiv.appendChild(newTodo);
   // Check Mark Button
@@ -24,8 +24,10 @@ function addTodo(event) {
     // Check Trash Button
     const trashButton = document.createElement('button');
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
-    trashButton.classList.add('complete-btn');
+    trashButton.classList.add('trash-btn');
     todoDiv.appendChild(trashButton);
     // Append To List
     todoList.appendChild(todoDiv);
+    // Crear todo input value after add
+    todoInput.value = '';
 }
