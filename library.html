@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="library.css">
+  <title>Library project</title>
+</head>
+<body>
+  <h1 class="title1">Library Project</h1>
+  <form>
+    <div class="form-group">
+      <label for="book-title">Title:</label>
+      <input id="book-title" name="book-title" type="text" placeholder="Book Title..." required>
+    </div>
+    <div class="form-group">
+      <label for="book-author">Author:</label>
+      <input id="book-author" name="book-author" type="text" placeholder="Book Author..." required>
+    </div>
+    <div class="form-group">
+      <label for="book-pages">Pages:</label>
+      <input id="book-pages" name="book-pages" type="text" placeholder="Book Pages..." required>
+    </div>
+    
+    <input type="radio" id="read" name="read" value="read">
+  <label for="read">Read</label><br>
+  <input type="radio" id="not-read" name="read" value="not-read">
+  <label for="read">Not Read</label><br>
+
+  <button type="submit">Add Book</button>
+  </form>
+
+  <table id="t01">
+    <tr>
+      <th>Title</th>
+      <th>Author</th> 
+      <th>Pages</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>Not read</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>Read</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+      <td>Read</td>
+    </tr>
+  </table>
+  <script src="library.js"></script>
+</body>
+</html>
